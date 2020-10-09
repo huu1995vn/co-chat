@@ -44,7 +44,7 @@ export default class CommonMethods {
     return this.removeAccents(str.toLowerCase()).replace(/ /g, "-")
   }
   static getData(items, attr, defaultValue = null) {
-    let listProperties = attr.split(".")
+    let listProperties = attr?.split(".")
     return this.getValueBylistProperties(items, listProperties, defaultValue)
   }
 
